@@ -13,8 +13,8 @@ When running on iPad:
 
 # Build requirements
 
-### iOS 11.0 SDK or later
+* iOS 11.0 SDK or later
 
 # Runtime requirements
 
-### iOS 10.0 or later
+* iOS 10.0 or later
