@@ -29,8 +29,6 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
-        searchController = UISearchController(searchResultsController: nil)
-        
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
         }
