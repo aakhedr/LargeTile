@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		364F0DF71F8315D1003F7576 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F0DF61F8315D1003F7576 /* FinalViewController.swift */; };
+		364F0DF91F831F80003F7576 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 364F0DF81F831F80003F7576 /* README.md */; };
 		36C55EF01F789FBE0067C93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55EEF1F789FBE0067C93E /* AppDelegate.swift */; };
 		36C55EF21F789FBE0067C93E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55EF11F789FBE0067C93E /* MasterViewController.swift */; };
 		36C55EF41F789FBE0067C93E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C55EF31F789FBE0067C93E /* DetailViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		364F0DF61F8315D1003F7576 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		364F0DF81F831F80003F7576 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		36C55EEC1F789FBE0067C93E /* LargeTitle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LargeTitle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C55EEF1F789FBE0067C93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36C55EF11F789FBE0067C93E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		36C55EE31F789FBE0067C93E = {
 			isa = PBXGroup;
 			children = (
+				364F0DF81F831F80003F7576 /* README.md */,
 				36C55EEE1F789FBE0067C93E /* LargeTitle */,
 				36C55F051F789FBE0067C93E /* LargeTitleTests */,
 				36C55F101F789FBE0067C93E /* LargeTitleUITests */,
@@ -240,6 +243,7 @@
 			files = (
 				36C55EFC1F789FBE0067C93E /* LaunchScreen.storyboard in Resources */,
 				36C55EF91F789FBE0067C93E /* Assets.xcassets in Resources */,
+				364F0DF91F831F80003F7576 /* README.md in Resources */,
 				36C55EF71F789FBE0067C93E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
