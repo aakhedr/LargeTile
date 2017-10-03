@@ -5,7 +5,7 @@
 
 When running on iPhone:
 * `UISearchBar` does not show initially.
-* After segue to `FinalViewController` and tapping back again to 'DetailViewController`, the search bar appears.
+* After segue to `FinalViewController` and tapping back again to `DetailViewController`, the search bar appears.
 * If `UISearchBar` is tapped it does not fit correctly in the navigation bar.
 
 When running on iPad:
