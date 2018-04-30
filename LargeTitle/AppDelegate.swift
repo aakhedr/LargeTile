@@ -57,5 +57,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         return false
     }
 
+    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
+        if splitViewController.isCollapsed, let navController = vc as? UINavigationController {
+            if let detailVC = navController.topViewController {
+                splitViewController.showDetailViewController(detailVC, sender: sender)
+                return true
+            }
+        }
+        return false
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, separateSecondaryFrom primaryViewController: UIViewController) -> UIViewController? {
+        let controllers = splitViewController.viewControllers
+        
+        if let navController = controllers[controllers.count - 1] as? UINavigationController {
+            if let detailViewController = navController.topViewController as? DetailViewController {
+                navController.popViewController(animated: false)
+                let detailNavController = UINavigationController(rootViewController: detailViewController)
+                if #available(iOS 11.0, *) {
+                    detailNavController.navigationBar.prefersLargeTitles = true
+                }
+                return detailNavController
+            }
+            else if let _ = navController.topViewController as? MasterViewController {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let detailNavController = storyboard.instantiateViewController(withIdentifier: "DetailNav") as? UINavigationController {
+                    if let detailViewController = detailNavController.topViewController as? DetailViewController {
+                        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+                        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+                    }
+                    return detailNavController
+                }
+            }
+        }
+        return nil
+    }
+    
 }
 
